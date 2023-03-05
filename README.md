@@ -10,7 +10,9 @@ Docker Compose version v2.6.0
 ```
 - [ ] clone the repo
 ```console
-
+$ cd Desktop
+$ git clone https://github.com/ZiadMansourM/docker-hadoop.git
+$ cd docker-hadoop
 ```
 
 ```console
@@ -24,6 +26,10 @@ namenode            "/entrypoint.sh /run…"   namenode            running (heal
 nodemanager         "/entrypoint.sh /run…"   nodemanager1        running (healthy)   8042/tcp
 resourcemanager     "/entrypoint.sh /run…"   resourcemanager     running (healthy)   8088/tcp
 ```
+
+## ⚡️ Run a simple word count example
+1. put you jar file inside ./Data folder and make sure data name is `input.txt` or change it inside run-in-namenode.sh to your file name.
+2. command `docker compose exec namenode bash /Data/run-in-namenode.sh <jar-file-name> <class-name>`
 
 ```console
 $ docker compose exec namenode bash /Data/run-in-namenode.sh WordCount.jar WordCount
