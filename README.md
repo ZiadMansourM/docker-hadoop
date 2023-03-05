@@ -52,12 +52,12 @@ Deleted /output
 ```console
 ziadh@Ziads-MacBook-Air docker-hadoop % docker compose down
 [+] Running 6/6
- ⠿ Container datanode             Removed                                                       10.6s
- ⠿ Container historyserver        Removed                                                       10.7s
- ⠿ Container nodemanager          Removed                                                       10.8s
- ⠿ Container resourcemanager      Removed                                                       10.8s
- ⠿ Container namenode             Removed                                                       10.7s
- ⠿ Network docker-hadoop_default  Removed                                                        0.1s
+ ⠿ Container datanode             Removed      10.6s
+ ⠿ Container historyserver        Removed      10.7s
+ ⠿ Container nodemanager          Removed      10.8s
+ ⠿ Container resourcemanager      Removed      10.8s
+ ⠿ Container namenode             Removed      10.7s
+ ⠿ Network docker-hadoop_default  Removed      0.1s
 ```
 
 Maintained by: Ziad Hassanin - SWE Doing SRE
